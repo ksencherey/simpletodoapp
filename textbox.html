@@ -1,0 +1,15 @@
+<!-- Create a button that takes what's inside the textbox, puts it in a div and adds the div to the page. -->
+<body>
+  <input type="text" id="title" />
+  <button onclick="display()">Display Text</button>
+  <script>
+    const display = () => {
+      let text = document.getElementById("title");
+      let title = text.value;
+
+      let div = document.createElement("div");
+      div.innerText = title;
+      document.body.appendChild(div);
+    };
+  </script>
+</body>

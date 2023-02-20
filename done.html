@@ -1,0 +1,9 @@
+<button id="todo-button" onclick="changeText()">To Do</button>
+<!-- Set up a <button id="todo-button">To Do</button> so that when you //click the -->
+<!-- button, the text inside changes to "Done" (hint: use .innerText) const -->
+<script>
+  changeText = () => {
+    let clickButton = document.getElementById("todo-button");
+    clickButton.innerText = "Done";
+  };
+</script>
